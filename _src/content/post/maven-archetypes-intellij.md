@@ -1,14 +1,14 @@
 ---
 title: "Managing Maven Archetypes in IntelliJ"
 date: 2017-09-04T00:29:43-04:00
-draft: true
+draft: false
 ---
 
 <iframe class="post-vid" width="560" height="315" src="https://www.youtube.com/embed/rYDp-BNkLFg" frameborder="0" allowfullscreen></iframe>
 
-Recently I started using [IntelliJ]() for Scala development. When you install
+Recently I started using [IntelliJ](https://www.jetbrains.com/idea/) for Scala development. When you install
 IntelliJ you can also install it's Scala plugin and hit the ground running using
-[SBT](). However, I needed a maven project.
+[SBT](http://www.scala-sbt.org/). However, I needed a maven project.
 
 Starting maven projects is much easier when you start from a maven archetype.
 An archetype is a template of a project. In my case, I wanted to use a basic
@@ -63,3 +63,9 @@ Open the `UserArchetypes.xml` file in your favorite text editor, find the line
 which specifies the archetype you would like to remove from the IntelliJ list.
 Delete the XML entry, save the file, and restart IntelliJ. You should see that
 archetype is no longer in the list!
+
+## Sources
+
+- https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
+- https://stackoverflow.com/questions/30080293/scala-signature-error-for-scala-module-in-intellij-idea-maven-project
+- https://stackoverflow.com/questions/4361567/where-are-added-archetypes-stored-in-intellij

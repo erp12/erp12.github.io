@@ -17,7 +17,7 @@
       <pubDate>Mon, 04 Sep 2017 00:29:43 -0400</pubDate>
       
       <guid>https://erp12.github.io/post/maven-archetypes-intellij/</guid>
-      <description>Recently I started using [IntelliJ]() for Scala development. When you install IntelliJ you can also install it&amp;rsquo;s Scala plugin and hit the ground running using [SBT](). However, I needed a maven project.
+      <description>Recently I started using IntelliJ for Scala development. When you install IntelliJ you can also install it&amp;rsquo;s Scala plugin and hit the ground running using SBT. However, I needed a maven project.
 Starting maven projects is much easier when you start from a maven archetype. An archetype is a template of a project. In my case, I wanted to use a basic Scala archetype which provided everything I would need to write my application and tests in Scala.</description>
     </item>
     
