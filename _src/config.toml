@@ -7,5 +7,14 @@ sectionPagesMenu = "main"
 
 [params]
   subtitle = "Another developer rambling online."
-  author = "Eddie Pantridge"
   logo = "img/logo.png"
+
+  [Author]
+    name = "Eddie Pantridge"
+    website = "https://erp12.github.io"
+    github = "erp12"
+    twitter = "EdEddieEdster"
+    # linkedin = "username"
+    # stackoverflow = "users/XXXXXXX/username"
+    # instagram = "username"
+    # youtube = "user/username" # or channel/channelname
