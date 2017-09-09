@@ -4,8 +4,8 @@ title = "ERP"
 theme = "beautifulhugo"
 publishDir = ".."
 sectionPagesMenu = "main"
-relativeURLs = true
 
 [params]
   subtitle = "Another developer rambling online."
   author = "Eddie Pantridge"
+  logo = "img/logo.png"
