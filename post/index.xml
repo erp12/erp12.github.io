@@ -2,21 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ERP</title>
-    <link>http://example.org/post/</link>
+    <link>https://erp12.github.io/post/</link>
     <description>Recent content in Posts on ERP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Sep 2017 00:29:43 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://erp12.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Managing Maven Archetypes in IntelliJ</title>
+      <link>https://erp12.github.io/post/maven-archetypes-intellij/</link>
+      <pubDate>Mon, 04 Sep 2017 00:29:43 -0400</pubDate>
+      
+      <guid>https://erp12.github.io/post/maven-archetypes-intellij/</guid>
+      <description>Recently I started using [IntelliJ]() for Scala development. When you install IntelliJ you can also install it&amp;rsquo;s Scala plugin and hit the ground running using [SBT](). However, I needed a maven project.
+Starting maven projects is much easier when you start from a maven archetype. An archetype is a template of a project. In my case, I wanted to use a basic Scala archetype which provided everything I would need to write my application and tests in Scala.</description>
+    </item>
+    
+    <item>
       <title>Pretending Clojure Has Argument Defaults</title>
-      <link>http://example.org/post/clj-default-arg/</link>
+      <link>https://erp12.github.io/post/clj-default-arg/</link>
       <pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/clj-default-arg/</guid>
+      <guid>https://erp12.github.io/post/clj-default-arg/</guid>
       <description>Although Clojure doesn&amp;rsquo;t have the ability to specify the default value of a function argument, it is common to use multiple function signatures to achieve serve the same purpose. We can also &amp;ldquo;destructure&amp;rdquo; a variadic function (function is arbitrary number of arguments) to get default argument values.
 Simple Example A great example of having default values for function arguments is the range. Of course, this function is built into Clojure but it makes a great demonstration of default argument values.</description>
     </item>

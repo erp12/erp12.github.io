@@ -5,17 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>404 Page not found</title>
-  <meta property="og:title" content="404 Page not found" />
-  <meta name="twitter:title" content="404 Page not found" />
+  <title>Managing Maven Archetypes in IntelliJ</title>
+  <meta property="og:title" content="Managing Maven Archetypes in IntelliJ" />
+  <meta name="twitter:title" content="Managing Maven Archetypes in IntelliJ" />
+  <meta name="description" content="Recently I started using [IntelliJ]() for Scala development. When you install IntelliJ you can also install it&rsquo;s Scala plugin and hit the ground running using [SBT](). However, I needed a maven project.
+Starting maven projects is much easier when you start from a maven archetype. An archetype is a template of a project. In my case, I wanted to use a basic Scala archetype which provided everything I would need to write my application and tests in Scala.">
+  <meta property="og:description" content="Recently I started using [IntelliJ]() for Scala development. When you install IntelliJ you can also install it&rsquo;s Scala plugin and hit the ground running using [SBT](). However, I needed a maven project.
+Starting maven projects is much easier when you start from a maven archetype. An archetype is a template of a project. In my case, I wanted to use a basic Scala archetype which provided everything I would need to write my application and tests in Scala.">
+  <meta name="twitter:description" content="Recently I started using [IntelliJ]() for Scala development. When you install IntelliJ you can also install it&rsquo;s Scala plugin and hit the ground running using [SBT](). However, I needed a maven …">
   <meta name="author" content=""/>
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://erp12.github.io" />
+  <meta property="og:url" content="https://erp12.github.io/post/maven-archetypes-intellij/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ERP" />
 
   <meta name="generator" content="Hugo 0.25.1" />
-  <link rel="canonical" href="https://erp12.github.io" />
+  <link rel="canonical" href="https://erp12.github.io/post/maven-archetypes-intellij/" />
   <link rel="alternate" href="https://erp12.github.io/index.xml" type="application/rss+xml" title="ERP">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -114,14 +119,126 @@
 
 
     
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
     
-  <div role="main" class="container main-content">
-    <div class="text-center">
-      <h1>Whoops, this page doesn&#39;t exist. Move along. (404 error)</h1>
-      <br/>
-      <img src="https://erp12.github.io/img/404-southpark.jpg" />
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Managing Maven Archetypes in IntelliJ</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on September 4, 2017
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<iframe class="post-vid" width="560" height="315" src="https://www.youtube.com/embed/rYDp-BNkLFg" frameborder="0" allowfullscreen></iframe>
+
+<p>Recently I started using [IntelliJ]() for Scala development. When you install
+IntelliJ you can also install it&rsquo;s Scala plugin and hit the ground running using
+[SBT](). However, I needed a maven project.</p>
+
+<p>Starting maven projects is much easier when you start from a maven archetype.
+An archetype is a template of a project. In my case, I wanted to use a basic
+Scala archetype which provided everything I would need to write my application
+and tests in Scala.</p>
+
+<p>If you take a look at the list of default archetypes that IntelliJ knows about
+at install, you will see one named <code>scala-archetype-simple</code>. You might think
+that is the perfect archetype for my needs, however I wasn&rsquo;t able to get it to
+work and every online source pointed me towards using a different archetype,
+which we need to add to IntelliJ.</p>
+
+<h2 id="adding-an-archetype-to-intellij">Adding an Archetype to IntelliJ</h2>
+
+<p>The &ldquo;Add Archetype&hellip;&rdquo; button is what we want (duh). A simple dialog pops up
+and we can enter the GroupId, ArtifactId, and Version of the archetype we would
+like to add. In my case I entered:</p>
+
+<pre><code>groupId: net.alchim31.maven
+artifactId: scala-archetype-simple
+version: 1.6
+</code></pre>
+
+<p>When we click &ldquo;OK&rdquo;, the archetype is added to the list in the IntelliJ create
+project wizard. Every time we start a new Maven project, we should see the new
+archetype in the list.</p>
+
+<p>What if we speed through this process and make a typo? What if we accidently
+add the same Archetype twice? &hellip; I did these things, and my archetype list
+got a little cluttered&hellip; but how do we remove elements from the archetype list?</p>
+
+<h2 id="removing-an-archetype-from-intellij">Removing an Archetype from IntelliJ</h2>
+
+<p>Unfortunately, there is no simple &ldquo;Remove Archetype&rdquo; button. Luckily, all the
+archetypes added by users are stored in a simple XML file which we can edit.
+The trick is finding where the <code>UserArchetypes.xml</code> file is our computer.</p>
+
+<p>It varies based on operating system. Here are all the locations I could find
+online:</p>
+
+<ul>
+<li>Mac: <code>~/Library/Caches/IntelliJIdea12/Maven/Indices/UserArchetypes.xml</code></li>
+<li>Linux: <code>~/.IntelliJIdea10/system/Maven/Indices/UserArchetypes.xml</code></li>
+<li>Windows: <code>C:\Users\[USR]\.IdeaIC2017\system\Maven\Indices\UserArchetypes.xml</code></li>
+</ul>
+
+<blockquote>
+<p>Note: For the windows path, replace [USR] with your PC username. You may
+also have to change the name of the <code>.IdeaIC2017</code> folder depending on what
+version of IntelliJ you are using.</p>
+</blockquote>
+
+<p>Open the <code>UserArchetypes.xml</code> file in your favorite text editor, find the line
+which specifies the archetype you would like to remove from the IntelliJ list.
+Delete the XML entry, save the file, and restart IntelliJ. You should see that
+archetype is no longer in the list!</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://erp12.github.io/post/clj-default-arg/" data-toggle="tooltip" data-placement="top" title="Pretending Clojure Has Argument Defaults">&larr; Previous Post</a>
+          </li>
+        
+        
+      </ul>
+
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">

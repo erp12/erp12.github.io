@@ -3,33 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/post/clj-default-arg/</loc>
+    <loc>https://erp12.github.io/post/maven-archetypes-intellij/</loc>
+    <lastmod>2017-09-04T00:29:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://erp12.github.io/post/clj-default-arg/</loc>
     <lastmod>2016-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://erp12.github.io/about/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://erp12.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2016-11-22T00:00:00+00:00</lastmod>
+    <loc>https://erp12.github.io/</loc>
+    <lastmod>2017-09-04T00:29:43-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2016-11-22T00:00:00+00:00</lastmod>
+    <loc>https://erp12.github.io/post/</loc>
+    <lastmod>2017-09-04T00:29:43-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://erp12.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
