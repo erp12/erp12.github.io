@@ -1,8 +1,8 @@
-baseURL = "https://erp12.github.io"
+baseURL = "https://erp12.github.io/"
 languageCode = "en-us"
 title = "ERP"
-theme = "beautifulhugoERP"
-publishDir = ".."
+theme = "beautifulhugo"
+publishDir = "../"
 sectionPagesMenu = "main"
 
 [params]
