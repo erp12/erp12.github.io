@@ -6,11 +6,11 @@ draft: false
 
 Although Clojure doesn't have the ability to specify the default value of a function argument, it is common to use multiple function signatures to achieve serve the same purpose. We can also "destructure" a variadic function (function is arbitrary number of arguments) to get default argument values.
 
-#### Simple Example
+### Simple Example
 
 A great example of having default values for function arguments is the `range`. Of course, this function is [built into Clojure](https://clojuredocs.org/clojure.core/range) but it makes a great demonstration of default argument values.
 
-Below is an implementation of a function that has a similar behavior as `range`, except it returns a vector. Lets call our function `my-range` and write it to take the same arguments as `range`.
+Below is an implementation of a function that has a similar behavior as `range`, except it returns a vector. Let's call our function `my-range` and write it to take the same arguments as `range`.
 
 ```clj
 (defn my-range
@@ -23,7 +23,7 @@ Below is an implementation of a function that has a similar behavior as `range`,
              (conj result i)))))
 ```
 
-Lets compare our `my-range` function to Clojure's `range` function.
+Let's compare our `my-range` function to Clojure's `range` function.
 
 ```clj
 (my-range 0 5 1) ; => [0 1 2 3 4]
@@ -52,15 +52,13 @@ Wouldn't it be nice if we could call `my-range` with only 1 or 2 arguments, just
 
 When our functions have only 1 signature, we list our arguments in `[]`s directly after the function name. When we want to write a function with multiple signatures we put multiple sets of `[]`s, each in their own `()` expressions. Using this, we can write a single function that has a different behavior based on the number of arguments passed.
 
->The vocab word for this post is [Arity](https://en.wikipedia.org/wiki/Arity).
-
 Notice how the two branches of `my-range-2` that don't have all 3 arguments simply call `my-range-2` with the default argument values we wanted?
 
->Stuart Sierra has a great demonstration [here](https://stuartsierra.com/2015/06/01/clojure-donts-optional-arguments-with-varargs) of this concept, except in the context of optional arguments.
+>Stuart Sierra has a great demonstration [here](https://stuartsierra.com/2015/06/01/clojure-donts-optional-arguments-with-varargs) of this concept used more generally in the context of optional arguments.
 
 In other words, when we call `my-range-2` without all three arguments, the `my-range-2` function calls itself with all missing arguments set to their default values.
 
-#### Can we do better?
+### Can we do better?
 
 What if we wanted to specify a value for `end` and `step` but use the default value for `start`. Not even *Clojure's* `range` supports this.
 
