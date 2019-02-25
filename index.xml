@@ -6,10 +6,20 @@
     <description>Recent content on ERP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Sep 2017 00:29:43 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://erp12.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Revival of PyshGP</title>
+      <link>https://erp12.github.io/post/pyshgp-1-reboot/</link>
+      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://erp12.github.io/post/pyshgp-1-reboot/</guid>
+      <description>I have revived pyshgp. A python package for doing PushGP.
+Program synthesis, or &amp;ldquo;programming by example,&amp;rdquo; has been steadily getting more attention each year. Some simple systems are relatively well known, such as Excel&amp;rsquo;s Flash Fill and SKETCH. The more capable (and complex) systems have been largely relegated to niche research communities, each busy exploring their respective regions of the frontier. As the field continues to gain traction, we would hope to see a convergence of ideas and the emergence of well understood techniques and tools.</description>
+    </item>
     
     <item>
       <title>Managing Maven Archetypes in IntelliJ</title>

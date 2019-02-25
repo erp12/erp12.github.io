@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>The Revival of PyshGP - ERP</title>
+  <meta property="og:title" content="The Revival of PyshGP" />
+  <meta name="twitter:title" content="The Revival of PyshGP" />
+  <meta name="description" content="I have revived pyshgp. A python package for doing PushGP.
+Program synthesis, or &ldquo;programming by example,&rdquo; has been steadily getting more attention each year. Some simple systems are relatively well known, such as Excel&rsquo;s Flash Fill and SKETCH. The more capable (and complex) systems have been largely relegated to niche research communities, each busy exploring their respective regions of the frontier. As the field continues to gain traction, we would hope to see a convergence of ideas and the emergence of well understood techniques and tools.">
+  <meta property="og:description" content="I have revived pyshgp. A python package for doing PushGP.
+Program synthesis, or &ldquo;programming by example,&rdquo; has been steadily getting more attention each year. Some simple systems are relatively well known, such as Excel&rsquo;s Flash Fill and SKETCH. The more capable (and complex) systems have been largely relegated to niche research communities, each busy exploring their respective regions of the frontier. As the field continues to gain traction, we would hope to see a convergence of ideas and the emergence of well understood techniques and tools.">
+  <meta name="twitter:description" content="I have revived pyshgp. A python package for doing PushGP.
+Program synthesis, or &ldquo;programming by example,&rdquo; has been steadily getting more attention each year. Some simple systems are …">
+  <meta name="author" content="Eddie Pantridge"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "ERP",
+    
+    "url": "https://erp12.github.io/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://erp12.github.io/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://erp12.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://erp12.github.io/post/pyshgp-1-reboot/",
+          "name": "The revival of pysh g p"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Eddie Pantridge"
+  },
+  "headline": "The Revival of PyshGP",
+  "description" : "I have revived pyshgp. A python package for doing PushGP.
+Program synthesis, or &amp;ldquo;programming by example,&amp;rdquo; has been steadily getting more attention each year. Some simple systems are relatively well known, such as Excel&amp;rsquo;s Flash Fill and SKETCH. The more capable (and complex) systems have been largely relegated to niche research communities, each busy exploring their respective regions of the frontier. As the field continues to gain traction, we would hope to see a convergence of ideas and the emergence of well understood techniques and tools.",
+  "inLanguage" : "en",
+  "wordCount": 1198,
+  "datePublished" : "2019-02-24T00:00:00",
+  "dateModified" : "2019-02-24T00:00:00",
+  "image" : "https://erp12.github.io/img/logo.png",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://erp12.github.io/post/pyshgp-1-reboot/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://erp12.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://erp12.github.io/img/logo.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="The Revival of PyshGP" />
+<meta property="og:description" content="I have revived pyshgp. A python package for doing PushGP.
+Program synthesis, or &ldquo;programming by example,&rdquo; has been steadily getting more attention each year. Some simple systems are relatively well known, such as Excel&rsquo;s Flash Fill and SKETCH. The more capable (and complex) systems have been largely relegated to niche research communities, each busy exploring their respective regions of the frontier. As the field continues to gain traction, we would hope to see a convergence of ideas and the emergence of well understood techniques and tools.">
+<meta property="og:image" content="https://erp12.github.io/img/logo.png" />
+<meta property="og:url" content="https://erp12.github.io/post/pyshgp-1-reboot/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ERP" />
+  <meta name="twitter:title" content="The Revival of PyshGP" />
+  <meta name="twitter:description" content="I have revived pyshgp. A python package for doing PushGP.
+Program synthesis, or &ldquo;programming by example,&rdquo; has been steadily getting more attention each year. Some simple systems are …">
+  <meta name="twitter:image" content="https://erp12.github.io/img/logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@EdEddieEdster" />
+  <meta name="twitter:creator" content="@EdEddieEdster" />
+  <meta property="og:image" content="https://erp12.github.io/img/logo.png" />
+  <meta name="twitter:image" content="https://erp12.github.io/img/logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@EdEddieEdster" />
+  <meta name="twitter:creator" content="@EdEddieEdster" />
+  <meta property="og:url" content="https://erp12.github.io/post/pyshgp-1-reboot/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ERP" />
+
+  <meta name="generator" content="Hugo 0.52" />
+  <link rel="alternate" href="https://erp12.github.io/index.xml" type="application/rss+xml" title="ERP">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://erp12.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://erp12.github.io/css/syntax.css" /><link rel="stylesheet" href="https://erp12.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous"><style>
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus ,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+a h2.post-title:hover,
+a h2.post-title:focus,
+a.post-read-more:hover,
+a.post-read-more:focus,
+a:hover,
+a:focus {
+  color: #C1272D;
+}
+
+div.page-heading h1 {
+  color: #5E0A0A
+}
+
+iframe.post-vid {
+  display: block;
+  margin: 0 auto;
+}
+
+article p, pre {
+  margin-bottom: 20px;
+}
+
+article h3 {
+  margin-top: 30px;
+}
+
+ 
+
+.cv-contact {
+  font-family: monospace;
+  text-align: center;
+}
+
+.cv-headshot {
+  padding: 20px;
+}
+
+</style>
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://erp12.github.io/">ERP</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="About" href="/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="CV" href="/cv/">CV</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Posts" href="/post/">Posts</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="ERP" href="https://erp12.github.io/">
+            <img class="avatar-img" src="https://erp12.github.io/img/logo.png" alt="ERP" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>The Revival of PyshGP</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 24, 2019
+  
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Eddie Pantridge
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p>I have revived <a href="#">pyshgp</a>. A python package for doing <a href="https://erp12.github.io/push-redux/">PushGP</a>.</p>
+
+<p>Program synthesis, or &ldquo;programming by example,&rdquo; has been steadily getting more attention each year. Some simple systems are relatively well known, such as <a href="#">Excel&rsquo;s Flash Fill</a> and <a href="#">SKETCH</a>. The more capable (and complex) systems have been largely relegated to niche research communities, each busy exploring their respective regions of the frontier. As the field continues to gain traction, we would hope to see a convergence of ideas and the emergence of well understood techniques and tools. One indication of how far the field of program synthesis has progressed to look at the applications of the &ldquo;state-of-the-art&rdquo;.</p>
+
+<p>Consider the &ldquo;<a href="http://geneticimprovementofsoftware.com/">Genetic Improvement</a>&rdquo; workshop at the GECCO conference. The workshop is dedicated to research surrounding the use of <a href="#">Genetic Programming</a> to improve pre-existing software. The workshop is relatively young, starting in 2015, however the <a href="https://gecco-2019.sigevo.org/index.html/Workshops#id_Genetic%20Improvement%20(GI)">upcoming 2019 installment</a> is already choosing to focus on industry applications.</p>
+
+<p>PushGP is a program synthesis technique that has been around since 2001, and is still actively researched. Throughout its life it has been developed enough to accomplish things most other program synthesis systems are incapable of. The programs produced by PushGP can utilize all of the standard data types and controls structures, as well as some simple data structures. PushGP is easily extendable to specific use cases and has seen impressive human-competitive coding results. For example, PushGP was used in the <a href="http://faculty.hampshire.edu/lspector/aqcp/">discovery of novel quantum computer programs</a> previously unknown to humanity, and has achieved human competitive results in <a href="http://www.cs.bham.ac.uk/~wbl/biblio/gecco2008/docs/p1291.pdf">finding algebraic terms in the study of finite algebras</a>.</p>
+
+<p>The evidence of PushGP&rsquo;s capabilities have resulted some interesting papers and discussions at conferences, but the communities involved are rather small and the real-world applications lean strongly academic.</p>
+
+<p>The <strong>newly revived</strong> <a href="https://github.com/erp12/pyshgp">PyshGP</a> project will be solely focused on maintaining a well understood PushGP implementation that is easy to use and application focused. Through this project, PushGP will hopefully reach a larger audience across a wider breadth of the field of program synthesis.</p>
+
+<h2 id="the-history-of-pyshgp-and-what-went-wrong">The history of PyshGP and what went wrong.</h2>
+
+<p>I started pyshgp when I was student. I used it for a handful of course projects, and I found myself wanting &ldquo;PushGP in Python&rdquo; frequently enough that I felt I should attempt to engineer a long-lived solution. I didn&rsquo;t have the skills or experience in software design to do it well, but I tried anyways. I was further encouraged after I started attending the annual GECCO conferences and frequently met individuals eager to try PushGP but unable to work with current implementations due to technical issues.</p>
+
+<p>The most advanced and bleeding-edge PushGP implementation is <a href="#">Clojush</a>. It is written in <a href="#">Clojure</a>. I love Clojure. I love Clojure so much that my coworkers have started muttering &ldquo;wait for it&rdquo; or &ldquo;here it comes&rdquo; right before I say my catchphrase: &ldquo;This would be so much simpler if we were using Clojure.&rdquo;</p>
+
+<p>Unfortunately, Clojure is not good for everything. It is virtually unheard of in the AI/ML field because it lacks the ecosystem of tools needed for non-engineers to perform their day-to-day tasks of modeling, visualization, and exploratory data analysis. Compare this to Python which is the host language of numpy, sci-kit learn, tensorflow, keras, seaborn, etc.</p>
+
+<p>If PushGP is going to widen its audience, it would make sense to have a Python implementation.</p>
+
+<p>Unfortunately, PyshGP failed to attract many users and was likely never used for any significant applications outside of my personal research projects. Before returning to the project, I thought it would be important to reflect on why this happened.</p>
+
+<h3 id="lost-in-translation">Lost in translation.</h3>
+
+<p>The first mistake was a direct consequence of my previously mentioned lack of experience. The first version of PyshGP was nearly a direct translation of Clojush into Python.</p>
+
+<p>Clojush is written purely functionally with immutable data structures. Python has a lot of mutability and is primarily an object oriented language.</p>
+
+<p>Clojush is a platform to support quick iterations of active research projects. The users of Clojush are not held back by the accumulation of technical debt because their main goal is the answer a research question, test a hypothesis, or gather data for publication. Clojush solves these needs, and the initial version of PyshGP was mostly redundant.</p>
+
+<p>From day 1, PyshGP suffered from an identity crisis, both in terms of who the intended users were and which paradigms were used in the source code. This heavily contributed to PyshGP&rsquo;s abandonment.</p>
+
+<h3 id="my-project-my-use-case">My project. My use case.</h3>
+
+<p>Once the initial version of PyshGP was working, I wanted to use it.</p>
+
+<p>I was primarily engaging with PushGP through contributions to academic research projects. I started to use PyshGP as the platform I used to run my experiments. This resulted in dozens of branches and GitHub issues, none of which were justifiable contributions to the main project.</p>
+
+<p>I should have separated the open source project of PyshGP from my own personal applications.</p>
+
+<p>Eventually the project bloated to the point where maintenance became painful. The codebase contained multiple superfluous features as well as dead code.</p>
+
+<p>The few people that showed interest expressed they were having difficulty with certain aspects of the project. Synthesized programs could not be saved and reused. The naive parallelism was unhelpful at best. Things were getting worse, not better.</p>
+
+<blockquote>
+<p><a href="https://www.youtube.com/watch?v=_akwHYMdbsM">Neal Page: He says we’re going the wrong way…</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=_akwHYMdbsM">Del Griffith: Oh, he’s drunk. How would he know where we’re going?</a></p>
+
+<p>&ndash; Neal and Del, <strong>Planes, Trains &amp; Automobiles</strong></p>
+</blockquote>
+
+<p>I knew it would take a lot of work to fix things, and at the time I was still relatively inexperienced. Without the skills to do better, I let the project sit.</p>
+
+<h3 id="the-revival">The revival.</h3>
+
+<p>I returned to the project a better engineer than when I first started PyshGP. This time the motivation was clear: <strong>Provide the wider AI/ML community with a stable, usable, implementation of PushGP that is suitable for application oriented use cases</strong>.</p>
+
+<p>The PyshGP codebase has been completely rewritten from scratch. The abstraction has been designed so that users do not need an understanding of the internals to use the package.</p>
+
+<p>PyshGP will not accept contributions that do not have a clear and demonstrable purpose. This includes contributions about open research questions that have not achieved a positive result yet. Any PushGP research done with PyshGP can be done on a fork or local branch without polluting the main repository.</p>
+
+<p>PyshGP will limit its scope to providing PushGP as a library. There will be no CLI. There will be no functionally starting new benchmark runs. Utilities can (and will) be created in separate applications for these purposes.</p>
+
+<h3 id="what-comes-next">What comes next?</h3>
+
+<p>Development of PyshGP will continue at a slow and methodical pace. Contributions are always welcome via <a href="https://github.com/erp12/pyshgp/issues">Issues</a> and Pull Requests on GitHub.</p>
+
+<p>Auxiliary utilities for benchmarking PyshGP will be created in separate repositories.</p>
+
+<p>I will be writing individual posts on narrow parts of the PyshGP abstraction that will be insightful to users and a good jumping off point for future contributors. Topics include:</p>
+
+<ul>
+<li>PushEstimator vs SearchAlgorithms</li>
+<li>Genomes Vs Code Blocks/Programs</li>
+<li>Parent Selection</li>
+<li>Variation</li>
+<li>User Defined Instructions</li>
+</ul>
+
+<p>I would be thrilled to hear about any application of PyshGP. It would be very helpful do a case study of various applications to determine where the tool needs the most improvement.</p>
+
+
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://erp12.github.io/post/maven-archetypes-intellij/" data-toggle="tooltip" data-placement="top" title="Managing Maven Archetypes in IntelliJ">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/erp12" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/EdEddieEdster" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://erp12.github.io">Eddie Pantridge</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2019
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://erp12.github.io/">ERP</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.52</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://erp12.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://erp12.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
