@@ -1,6 +1,7 @@
 ---
 title: The Revival of PyshGP
 date: 2019-02-24
+draft: false
 ---
 
 I have revived [pyshgp](#). A python package for doing [PushGP](https://erp12.github.io/push-redux/).
