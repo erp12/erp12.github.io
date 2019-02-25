@@ -4,9 +4,9 @@ date: 2019-02-24
 draft: false
 ---
 
-I have revived [pyshgp](#). A python package for doing [PushGP](https://erp12.github.io/push-redux/).
+I have revived [pyshgp](https://github.com/erp12/pyshgp). A python package for doing [PushGP](https://erp12.github.io/push-redux/).
 
-Program synthesis, or "programming by example," has been steadily getting more attention each year. Some simple systems are relatively well known, such as [Excel's Flash Fill](#) and [SKETCH](#). The more capable (and complex) systems have been largely relegated to niche research communities, each busy exploring their respective regions of the frontier. As the field continues to gain traction, we would hope to see a convergence of ideas and the emergence of well understood techniques and tools. One indication of how far the field of program synthesis has progressed to look at the applications of the "state-of-the-art".
+Program synthesis, or "programming by example," has been steadily getting more attention each year. Some simple systems are relatively well known, such as [Excel's Flash Fill](https://support.office.com/en-us/article/using-flash-fill-in-excel-3f9bcf1e-db93-4890-94a0-1578341f73f7) and [SKETCH](https://dl.acm.org/citation.cfm?id=1714168). The more capable (and complex) systems have been largely relegated to niche research communities, each busy exploring their respective regions of the frontier. As the field continues to gain traction, we would hope to see a convergence of ideas and the emergence of well understood techniques and tools. One indication of how far the field of program synthesis has progressed to look at the applications of the "state-of-the-art".
 
 Consider the "[Genetic Improvement](http://geneticimprovementofsoftware.com/)" workshop at the GECCO conference. The workshop is dedicated to research surrounding the use of [Genetic Programming](#) to improve pre-existing software. The workshop is relatively young, starting in 2015, however the [upcoming 2019 installment](https://gecco-2019.sigevo.org/index.html/Workshops#id_Genetic%20Improvement%20(GI)) is already choosing to focus on industry applications.
 
@@ -20,7 +20,7 @@ The **newly revived** [PyshGP](https://github.com/erp12/pyshgp) project will be 
 
 I started pyshgp when I was student. I used it for a handful of course projects, and I found myself wanting "PushGP in Python" frequently enough that I felt I should attempt to engineer a long-lived solution. I didn't have the skills or experience in software design to do it well, but I tried anyways. I was further encouraged after I started attending the annual GECCO conferences and frequently met individuals eager to try PushGP but unable to work with current implementations due to technical issues.
 
-The most advanced and bleeding-edge PushGP implementation is [Clojush](#). It is written in [Clojure](#). I love Clojure. I love Clojure so much that my coworkers have started muttering "wait for it" or "here it comes" right before I say my catchphrase: "This would be so much simpler if we were using Clojure."
+The most advanced and bleeding-edge PushGP implementation is [Clojush](https://github.com/lspector/Clojush). It is written in [Clojure](https://clojure.org/). I love Clojure. I love Clojure so much that my co-workers have started muttering "wait for it" or "here it comes" right before I say my catchphrase: "This would be so much simpler if we were using Clojure."
 
 Unfortunately, Clojure is not good for everything. It is virtually unheard of in the AI/ML field because it lacks the ecosystem of tools needed for non-engineers to perform their day-to-day tasks of modeling, visualization, and exploratory data analysis. Compare this to Python which is the host language of numpy, sci-kit learn, tensorflow, keras, seaborn, etc.
 
@@ -38,7 +38,7 @@ Clojush is a platform to support quick iterations of active research projects. T
 
 From day 1, PyshGP suffered from an identity crisis, both in terms of who the intended users were and which paradigms were used in the source code. This heavily contributed to PyshGP's abandonment.
 
-### My project. My use case.
+### My project. My use case. My mistake.
 
 Once the initial version of PyshGP was working, I wanted to use it.
 
